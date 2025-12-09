@@ -6,9 +6,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <h1>Prof Karen Carvalho</h1>
-      <p>Experiências de aprendizagem & desenvolvimento web</p>
-
+      <img src="/imagens/carvaleski.png" className="logo" />
       <div style={{ marginLeft: "auto" }}>
         {user ? (
           <>
@@ -30,6 +28,7 @@ const Header = () => {
             </button>
           </>
         )}
+
       </div>
     </header>
   );

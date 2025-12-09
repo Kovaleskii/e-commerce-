@@ -1,8 +1,8 @@
 function About() {
   return (
     <section id="sobre">
-      <h2>Sobre mim</h2>
-      <p>Sou desenvolvedor com experiência em front-end, apaixonado por criar interfaces acessíveis, intuitivas e impactantes.</p>
+      <h2>Sobre</h2>
+      <p>Revenderora de carros novos e seminovos</p>
     </section>
   );
 }
