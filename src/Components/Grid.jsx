@@ -12,7 +12,7 @@ function Grid() {
     <Col md={3}><Card /></Col>
     <Col md={3}><Card /></Col>
   </Row>
-    <Row className="g-4, mt-4">
+    <Row className="g-4 mt-4">
     <Col md={3}><Card /></Col>
     <Col md={3}><Card /></Col>
     <Col md={3}><Card /></Col>

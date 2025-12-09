@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <img src="/imagens/carvaleski.png" className="logo" />
+      <img src="/imagens/carvaleski.png" className="logo" alt="Logo CarValeski" />
       <div style={{ marginLeft: "auto" }}>
         {user ? (
           <>

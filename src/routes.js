@@ -1,8 +1,8 @@
-import Home from './pages/Home/home.jsx'
-import ProdutoPage from './pages/Product/product.jsx'
-import Erro from './pages/Erro/erro.jsx'
-import About from './Components/About.jsx'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home/home.jsx';
+import ProdutoPage from './pages/Product/product.jsx';
+import Erro from './pages/Erro/erro.jsx';
+import About from './Components/About.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function AppRoutes() {
   return (

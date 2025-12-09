@@ -24,10 +24,14 @@ function ProdutoPage() {
       fetchProduto();
     }, [id]);
 
+  if (!produto) {
+    return <div>Carregando...</div>;
+  }
+
   return (
     <div>
       <h1>{produto.nome}</h1>
-      <img src={produto.imagem} width="400" />
+      <img src={produto.imagem} width="400" alt={produto.nome} />
 
       <p><strong>Potência:</strong> {produto.potencia}</p>
       <p><strong>Torque:</strong> {produto.torque}</p>

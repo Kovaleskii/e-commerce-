@@ -1,40 +1,18 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState} from "react";
-import { db } from "../firebase";
-import { collection, getDocs } from 'firebase/firestore';
 
 function CardExample() {
   const navigate = useNavigate();
 
-  const [produtos, setProdutos] = useState([])
-
-  function abrirProduto(id) {
-    navigate(`/produto/${id}`);
-
-        useEffect(() => {
-    async function fetchProdutos() {
-      const produtosRef = collection(db, "produto");
-      const snapshot = await getDocs(produtosRef);
-     
-      const lista = snapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data()
-      }));
- 
-      setProdutos(lista);
-    }
- 
-    fetchProdutos();
-  }, []);
- 
+  function abrirProduto() {
+    navigate(`/produto/1`);
   }
 
   return (
     <div className="d-flex justify-content-around">
       <Card className="w-100">
-        <Card.Img variant="top" src="/imagens/chevette.jpg" />
+        <Card.Img variant="top" src="/imagens/chevette.jpg" alt="Chevette Turbão" />
         <Card.Body>
           <Card.Title className="card-title-gothic">Chevette Turbão</Card.Title>
           <Card.Text>
